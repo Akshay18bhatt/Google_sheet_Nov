@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google sheet</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="optionsStyle.css">
+    <link rel="icon" href="./asset/sheets_2020q4_48dp.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <div class="options">
+        <form action="#" id="form">
+            <select name="fontStyle" id="fontstyle">
+                <option value="a">Font style A</option>
+                <option value="b">Font style B</option>
+                <option value="c">Font style C</option>
+            </select>
+            <input type="number" name="fontSize" id="fontsize" min="8" max="32" placeholder="16">
+
+            <div>
+                <input type="checkbox" name="bold" id="Bold">
+                <label class="material-icons" for="Bold">format_bold</label>
+            </div>
+            <div>
+                <input type="checkbox" name="italic" id="Italic">
+                <label class="material-icons" for="Italic">format_italic</label>
+            </div>
+            <div>
+                <input type="checkbox" name="underline" id="Underline">
+                <label class="material-icons" for="Underline">format_underlined</label>
+            </div>
+
+            <div>
+                <input type="radio" name="align" id="left">
+                <label class="material-icons" for="left">format_align_left</label>
+                <input type="radio" name="align" id="center">
+                <label class="material-icons" for="center">format_align_center</label>
+                <input type="radio" name="align" id="right">
+                <label class="material-icons" for="right">format_align_right</label>
+            </div>
+
+            <div>
+                <input type="color" name="textColor" id="textcolor">
+                <label class="material-icons" for="textcolor">format_color_text</label>
+            </div>
+            <div>
+                <input type="color" name="bgColor" id="bgcolor">
+                <label class="material-icons" for="bgcolor">format_color_fill</label>
+            </div>
+
+        </form>
+    </div>
+    <div id="cell-state">
+        <div id="which_cell">c4</div>
+        <input type="text" name="" id="" placeholder="f ( x ) :">
+    </div>
+
+    <div id="root">
+        <div id="header">
+            <div class="head-cell"></div>
+        </div>
+        <div id="body_of_sno_And_cells">
+            <div id="sno"></div>
+            <div id="body_container"></div>
+        </div>
+    </div>
+
+    <script src="./Googlesheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#root{
+    width:100%;
+    height: 80%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    /* background-color:cadetblue; */
+    overflow: scroll;
+
+}
+#header{
+    width: 100%;
+    height: 25px;
+    background-color:;
+    display: flex;
+    position: sticky;
+    top:0px;
+}
+.head-cell:first-child{
+    min-width: 39px;
+    height: 25px;
+    background-color:gray;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border: 0.00001px solid black;
+}
+
+.head-cell{
+    min-width: 100px;
+    height: 24px;
+    border: 1px solid black;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#body_of_sno_And_cells{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 41px 1fr;
+}
+#sno{
+    position: sticky;
+    left:0px;
+}
+.sno-cell{
+    border: 0.5px solid black;
+    background-color:;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+}
+.cell{
+    min-width: 99.2px;
+    height: 25px;
+    border: 0.000000001px solid lightgray;
+}

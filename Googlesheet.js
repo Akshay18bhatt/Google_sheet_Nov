@@ -29,9 +29,36 @@ for(let i=1;i<=rows;i++){
     for(let j=1;j<=cols;j++){
         let cells= document.createElement("div");
         cells.className="cell";
+        cells.id=`${String.fromCharCode(64 + j)}${i}`;
         cells.contentEditable="true";
         rows.appendChild(cells);
+        cells.addEventListener("focus", onFocusing_cell);
+        cells.addEventListener("input", when_typing_in_cell);
+        cells.style.display="inline-block";
+        cells.addEventListener("keydown" , (e)=>{
+            if(e.keyCode===13){
+                // alert("enter pressed");
+                cells.style.boxShadow= "none";
+                cells.blur();
 
+            }
+        })
     }
     body_container.appendChild(rows);
 }
+
+
+
+
+
+
+
+
+// let namee=prompt("enter ur name");
+// function name(namee){
+//     console.log(`${namee} ur so smart bhai`);
+//     console.log(`${namee} ur so handsome bhai`);
+//     console.log(`${namee} ur so genius bhai`);
+//     console.log(`${namee} ur so young bhai`);
+// }
+// name(namee);

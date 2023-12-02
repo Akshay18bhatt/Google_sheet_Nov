@@ -72,3 +72,40 @@ input:checked + label{
     border-radius: 10px;
     color: white;
 }
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-extra-bold;
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-italic;
+    src: url(./fonts/Poppins-BlackItalic.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+
+#export,#import{
+    border-radius: 10px;
+    padding: 3px;
+    transform: all 0.5s;
+    background-color: lightgray;
+}
+
+#export:active, #import:active{
+    background-color: lime;
+    color:white;
+    transform: scale(1.2,1.2);
+    /* padding:6px; */
+    
+}
